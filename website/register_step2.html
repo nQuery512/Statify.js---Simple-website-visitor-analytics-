@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Enhance your marketing &middot; Statify.js</title>
+    <link href="css/register_step2.css" rel="stylesheet">
+    <link href="btn_popup.css" rel="stylesheet">
+    <link href="error_box.css" rel="stylesheet">
+    <link href="css/task_step.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id='banner-wrapper'>
+        <a href='index.html'>
+            <div id='logo-wrapper-clickable'>
+                <div id='banner-logo'></div>
+                <p id='banner-logo-name'>Statify.js</p>
+            </div>
+        </a>
+        <p id='banner-title'>Get Started</p>
+        <div id='banner-step-indicator' class='task-step'>
+            <div id='banner-step-frame-1'>1</div>
+            <div id='banner-step-frame-2'>2</div>
+            <div id='banner-step-frame-3'>3</div>
+        </div>
+        <div id='banner-localization-button'></div>
+    </div>
+
+    <div id="form-wrapper">
+        <form id='register-form'>
+            <p id='intro-title'><b>Account Creation</b></p>
+            <p id='intro-text'>We need some informations to allow you to view your website stats.<br>This service is totaly free until you reach 10000 <b>UNIQUE</b> visitors/day.<br>You can add a maximum of <b>20</b> websites by User Account.</p>
+
+            <div id='error-container' class='error-box'><b><p id="error-text"></p></b>
+            </div>
+            <div id='input-wrapper'>
+
+                <input type='button' id='send-form-button' class='register-button' value='Get Your ID' />
+                <input type='button' id='back-button' class='cancel-button' value='Cancel' />
+            </div>
+        </form>
+        <div id='info-wrapper'>
+            <div id='info-logo'></div>
+            <p id='info-text'>You will need to verify your email address in order to receive your website tracking token to plug the script into your website.</p>
+        </div>
+    </div>
+    <script src=" vendor/jquery/jquery.min.js "></script>
+    <script src="js/register.js"></script>
+    <script>
+        $('#send-form-button').on('click', function(e) {
+            window.scrollTo(0, 0);
+
+        });
+
+    </script>
+</body>
+
+</html>

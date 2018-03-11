@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #3E3E3E;
+}
+
+#discover-button {
+    position: absolute;
+    top: 80vh;
+    left: 40vw;
+}
+
+
+
+#log-button {
+    position: absolute;
+    top: 80vh;
+    left: 53vw;
+}
+
+
+#login-popup {
+    display: none;
+    position: absolute;
+    top: 8vh;
+    left: 33vw;
+    width: 34vw;
+    height: 88vh;
+    background-color: white;
+}
+
+#btn-popup-register {
+    position: absolute;
+    height: 12%;
+    width: 50%;
+    top: 88%;
+    left: 0%;
+}
+
+#error-container {
+    margin-top: 3vh;
+    position: absolute;
+    display: none;
+    width: 30vw;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+}
+
+#btn-popup-login {
+    position: absolute;
+    height: 12%;
+    width: 50%;
+    top: 88%;
+    left: 50%;
+}
+
+#login-form {
+    margin-left: 2vw;
+    margin-top: 8vh;
+
+}
+
+#btn-popup-login:hover {
+    background-color: #2d4c45;
+}
+
+#btn-popup-register:hover {
+    background-color: #2d4c45;
+}
+
+
+#popup-wrapper #login-popup h3 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+#password-recovery {
+    margin-top: 1vh;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#page-content-wrapper {
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    background-image: url(../background_sans.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #464646;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    .text_title {
+        color: white;
+        text-align: center;
+
+    }
+    #page-content-wrapper #h1 {
+        padding-top: 10vh;
+    }
+}

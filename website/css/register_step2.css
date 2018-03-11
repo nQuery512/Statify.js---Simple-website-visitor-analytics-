@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 190vh;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+#banner-wrapper {
+    position: fixed;
+    background-color: #2B2E2D;
+    width: inherit;
+    height: 12vh;
+    z-index: 2;
+}
+
+#logo-wrapper-clickable {
+    position: fixed;
+    display: inline-block;
+    width: 27vh;
+    height: 12vh;
+}
+
+#banner-logo {
+    position: fixed;
+    top: 2vh;
+    left: 1vh;
+    background-image: url(../logo.png);
+    background-size: cover;
+    background-color: #2B2E2D;
+    border: 0px;
+    height: 7vh;
+    width: 7vh;
+}
+
+#banner-logo-name {
+    position: fixed;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    left: 10vh;
+    margin-top: 3vh;
+    font-size: 4vh;
+}
+
+#banner-title {
+    position: fixed;
+    left: 30%;
+    margin-top: 2vh;
+    color: #FFFFFF;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#banner-step-indicator {
+    position: fixed;
+    padding-left: 1vh;
+    width: 13vw;
+    height: inherit;
+    top: 0vh;
+    left: 65vw;
+    border-radius: 5px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4vh;
+    line-height: 8vh;
+    text-align: center;
+    cursor: default;
+}
+
+#banner-step-frame-1 {
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    height: 8vh;
+    width: 3vw;
+    border-radius: 5px;
+    background-color: #1dfc00;
+}
+
+#banner-step-frame-2 {
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: 10vh;
+    z-index: 4;
+    height: 8vh;
+    width: 3vw;
+    border-radius: 5px;
+    background-color: #ff7b00;
+}
+
+#banner-step-frame-3 {
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: 18vh;
+    z-index: 4;
+    height: 8vh;
+    width: 3vw;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#banner-localization-button {
+    position: fixed;
+    top: 4vh;
+    width: 4vh;
+    height: 4vh;
+    left: 90vw;
+    background-size: cover;
+    background-color: #2B2E2D;
+    background-image: url(../localization.png);
+}
+
+body #form-wrapper {
+    overflow-y: hidden;
+    height: 165vh;
+    width: 95vw;
+    background: #FFFFFF;
+    margin-left: 2.5vw;
+    margin-top: 12vh;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #EEEEEE;
+    border-style: solid;
+}
+
+#register-form {
+    position: absolute;
+    width: 45vw;
+    margin-left: 13vw;
+    margin-top: 10vh;
+
+}
+
+#intro-title {
+    font-size: 3vw;
+    margin-bottom: 5vh;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#intro-text {
+    font-size: 1.5vw;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-bottom: 10vh;
+}
+
+.help-text {
+    font-size: 1vw;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #888888;
+}
+
+#info-wrapper {
+    position: absolute;
+    border: 0px;
+    border-radius: 5px;
+    border-style: solid;
+    top: 90vh;
+    left: 52vw;
+    height: 15vh;
+    width: 40vw;
+    background-color: #E2E2E2;
+}
+
+#info-logo {
+    position: absolute;
+    top: 5vh;
+    left: 1vw;
+    width: 4.5vh;
+    height: 4.5vh;
+    background-image: url(../info-logo.png);
+    background-size: cover;
+}
+
+#info-text {
+    position: absolute;
+    left: 5vw;
+    top: 2.5vh;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #2B2E2D;
+}
+
+#send-form-button,
+#back-button {
+    height: 7vh;
+    border-radius: 5px;
+}
+
+#back-button {
+    margin-left: 10vw;
+
+}
+
+#back-button:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 1px #A2A2A2;
+    -moz-box-shadow: inset 0px 0px 0px 1px #A2A2A2;
+    box-shadow: inset 0px 0px 0px 1px #A2A2A2;
+
+}

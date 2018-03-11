@@ -1,0 +1,30 @@
+.register-button {
+    border: 0px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    background: #202825;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-button {
+    border: 0px;
+    border-color: #777777;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    background: #152320;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel-button {
+    border: 0px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    background-color: #C2C2C2;
+    cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Enhance your marketing &middot; Statify.js</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="btn_popup.css" rel="stylesheet">
+    <link href='error_box.css' rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="page">
+                <div id="buttons">
+                    <button type=button class="btn btn-outline-secondary btn-lg" id="discover-button">Discover Now</button>
+                    <button type=button class="btn btn-outline-success btn-lg" id="log-button">Log in</button>
+                </div>
+                <div class="text_title ">
+                    <h1>Statify.js</h1>
+                    <h2>Smart insight of your website visitors' behavior</h2>
+                </div>
+            </div>
+        </div>
+        <div id='popup-wrapper'>
+            <div id="login-popup" class="container-fluid">
+                <h3>Login to your account</h3>
+                <div id='error-container' class='error-box'><b>Incorrect username or password</b>
+                </div>
+
+                <form id='login-form'>
+
+                    <b>Username</b> <br>
+                    <input type='text' name='Pseudo'><br><br> <b>Password</b><br>
+                    <input type='password' name='Password'>
+                    <div id='try'>
+                        <br>Remember me
+                        <input type='checkbox' id='remember'>
+                    </div>
+                    <p id='password-recovery'>Forgot your password ?</p>
+                </form>
+
+                <input id='btn-popup-register' value="SIGN UP" type="button" class='register-button' onclick="document.location.href='register.html';">
+                <input id='btn-popup-login' type='button' class='login-button' value='LOG IN'>
+            </div>
+        </div>
+
+    </div>
+
+    <script src=" vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="js/register.js"></script>
+
+    <script>
+        $(document).on('click', function(e) {
+            if (e.target.id == 'log-button') {
+                $('#page-content-wrapper').css('opacity', '0.4');
+                $('#login-popup').css('opacity', '1.0');
+                $('#login-popup').css('display', 'inline');
+            } else if (($('#login-popup').css('display') != 'none') && e.target.id == 'page-content-wrapper') {
+                $('#page-content-wrapper').css('opacity', '1.0');
+                $('#login-popup').css('display', 'none');
+                $('#error-container').css('display', 'none');
+                $('#login-form').css('margin-top', '8vh');
+
+            }
+
+        });
+
+        $('#btn-popup-login').on('click', function(e) {
+            if (!isValidLogin()) {
+                $('#error-container').css('display', 'block');
+                $('#login-form').css('margin-top', '18vh');
+            } else {
+                //redirection
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
