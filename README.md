@@ -1,4 +1,8 @@
 # Statify.js---Simple-website-visitor-analytics-
+
+This is a simple tracker that I made to allow people to have a good overview on your website main stats
+
+
 The statify project, the script part is made to be included in the index of your website
 The server side is a node.js server who handle the requests from the website and from the tracker
 The website is a Dashboard made to have a clear approach of the basic stats of web tracking (Origin of the incoming traffic, bounce rate, localisation of visitor and user behavior)
