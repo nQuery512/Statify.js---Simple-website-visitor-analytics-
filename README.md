@@ -1,6 +1,6 @@
 # Statify.js---Simple-website-visitor-analytics-
 
-This is a simple tracker that I made to allow people to have a good overview on your website main stats
+This is a simple tracker that I made to allow people to have a good overview on their website main stats
 
 
 The statify project, the script part is made to be included in the index of your website
